@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>'
+	
+	<!-- Document Title ------- -->
+		<title>malvinaH | Welcome</title>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" type="image/icon" href="title-icon.png">
+		
+	<!-- Stylesheets ---------- -->
+		<link rel="stylesheet" type="text/css" href="stylesheet1.css">
+		
+	<!-- Script --------------- -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>		
+		<script type="text/javascript" src="../websites/script1.js"></script>
+		
+	</head>
+	
+	<body>
+
+		<div class="wrap">
+			<a href="#" class="start">Click to print</a>
+			<div class="test" data-text="hey, my name is Malvina. I am a self-taught developer. I have started learning coding not too long ago but I LOVE IT!! 
+								   This display is actually really boring, so let's do something about it.">			   
+		</div>
+		
+		 <script>
+		 function typeWriter(text, n) {
+		  if (n < (text.length)) {
+			$('.test').html(text.substring(0, n+1));
+			n++;
+			setTimeout(function() {
+			  typeWriter(text, n)
+			}, 100);
+		  }
+		}
+
+		$('.start').click(function(e) {
+		  e.stopPropagation();
+		  
+		  var text = $('.test').data('text');
+		  
+		  typeWriter(text, 0);
+		});
+		</script>
+
+		<a class="callout" href="../websites/indexNew.html">Find out more</a>	
+	</body>
+	
+</html>

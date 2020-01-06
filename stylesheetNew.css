@@ -1,0 +1,197 @@
+/*web Fonts---------------*/
+
+html {
+	font-family: "Satirfy", satisfy; /* this should be the rest of the output you got from Google fonts */
+}
+
+/*Base styles-------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+h1 {  
+  font-size: 2rem; 
+  font-weight: normal;
+  line-height: 1.3; 
+  text-shadow: 0 1px 1px rgba(0,0,0,.8);
+  margin: 1rem 7rem 0.4rem 1rem;
+}
+
+}
+
+.main-nav {
+	margin: .05rem 0.5rem 0.5rem 0.5rem;
+	padding: 0 0.1rem;
+	float: left;
+}
+
+ul {
+	margin: 0.2rem auto;
+}
+
+li {
+	overflow: hidden;
+	margin: 0.5rem;
+	font-size: 1.2rem;
+}
+
+li a {
+	width: 1rem;
+	color: #0f3133;
+	margin: 0 auto;
+	padding: 0 .4rem .4rem .4rem;
+}
+
+a:link {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+li a:hover {
+	color: #d4af37 ; /*#DAA520*/
+}
+
+.bar1, .bar2, .bar3 {
+  width: 1.56rem;
+  height: 0.125rem;
+  background-color: #0f3133;
+  margin: 0.313rem auto;
+  transition: 0.2s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-3px, 1px);
+  transform: rotate(-45deg) translate(-3px, 1px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.social-media {
+	text-align: right;
+	margin: 31rem 0.1rem 0 auto;
+}
+
+.social-icons li{
+	margin: .05rem auto;
+	padding: .025rem;
+}
+
+
+
+
+/*----- Main Styles------------*/
+
+body {
+	padding: auto;
+	margin: auto;
+    height: 50.7rem;
+	background: linear-gradient(#968362/*#caf6fc*/, transparent 90%),
+            #968362 url('../websites/images/resumeimage4.jpg') no-repeat center; 
+	background-size: cover;
+	background-position: 100% 10%;
+}
+
+h1,
+li {
+	list-style-type: none;
+	padding: 0;
+	display: inline-table;
+}
+
+span {
+	text-align: right;
+	margin: 1rem 1.5rem 0 auto;
+}
+
+
+.main-footer {
+	text-align: right;
+	color: #d4cec5;
+	margin: 5.5rem 0.1rem 0 auto;
+	font-size: 0.6rem;
+}
+
+
+
+/*Media Queries ----------- */
+
+@media (min-width: 768px) {
+
+	body {
+		height: 22.1rem;
+		text-align: right;
+		background-position: 30% 70%;
+		position: relative;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}	
+	
+	.container {
+		margin: 10rem 1rem 0 auto;
+	}
+
+
+	h1 {  
+		font-size: 2.5rem;
+		margin: 1rem 2rem 0 auto;
+		padding: 0.5rem;
+	}
+
+	.main-nav {
+		margin: .1rem;
+		padding: 0 0 0 1rem;
+	}
+
+	li {
+		margin: 0.3rem;
+		font-size: 1.2rem;
+	}
+	
+li a:hover {
+	color: #0f3133; ; /*#DAA520*/
+}
+	.social-media {
+		margin: 7.5rem 2.5rem .05rem 0;
+	}
+
+	.wrap {
+		margin: 25rem 7rem 1rem auto;
+	}
+	
+	.main-footer {
+		margin: .5rem 1.5rem 0 auto;
+		font-size: .8rem;
+	}
+}
+
+	.main-footer {
+		position: absolute;
+		right: 1.5rem;
+		bottom: 0;
+	}
+	
+	.social-media {
+		position: absolute;
+		right: 0.2rem;
+		top: 7.5rem;
+	}
+	
+}
+
+
+
+
