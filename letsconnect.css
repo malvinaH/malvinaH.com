@@ -10,10 +10,10 @@ html {
 
 body {
   color: #fafafa;
-  font-size: 1rem; 
+  font-size: 1rem;
   text-transform: normal;
   font-weight: normal;
-  line-height: 1.4; 
+  line-height: 1.4;
   text-shadow: 0 1px 1px rgba(0,0,0,.8);
   margin: 0 auto;
   text-align: left-side;
@@ -22,11 +22,11 @@ body {
 .image {
 	width: 90%;
 	padding: 0;
-	margin: 10px;  
+	margin: 10px;
 	border: 1px;
     height: 22rem;
 			background: linear-gradient(to right, #968362, transparent 150%),
-            #968362 url('../websites/images/bioimage.jpg') no-repeat center; 
+            #968362 url('images/bioimage.jpg') no-repeat center;
 		background-size: cover;
 		background-position: 10% 15%;
 	}
@@ -46,8 +46,8 @@ footer {
 	margin-top: 1.8rem;
 	margin-right: 3.6rem;
 	}
-	
-	
+
+
 /*Media Queries ----------- */
 
 @media (min-width: 768px) {
@@ -63,7 +63,7 @@ body {
 	margin: 0;
     height: 22rem;
 			background: linear-gradient(to left, #968362, transparent 150%),
-            #968362 url('../websites/images/bioimage.jpg') no-repeat center; 
+            #968362 url('images/bioimage.jpg') no-repeat center;
 		background-size: cover;
 		background-position: 10% 15%;
 	}

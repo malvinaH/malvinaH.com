@@ -10,10 +10,10 @@ html {
 
 body {
   color: #fafafa;
-  font-size: 1rem; 
+  font-size: 1rem;
   text-transform: normal;
   font-weight: normal;
-  line-height: 1.4; 
+  line-height: 1.4;
   text-shadow: 0 1px 1px rgba(0,0,0,.8);
   margin: 0 auto;
   text-align: left-side;
@@ -22,11 +22,11 @@ body {
 .image {
 	width: 22.8rem;
 	padding: 0;
-	margin: 0;  
+	margin: 0;
 	border: 1px;
     height: 48rem;
 	background: linear-gradient(to right, #968362, transparent 150%),
-            #968362 url('../websites/images/bioimage.jpg') no-repeat center; 
+            #968362 url('images/bioimage.jpg') no-repeat center;
 	background-size: cover;
 	background-position: 20% 10%;
 }
@@ -52,43 +52,43 @@ a:link{
 /*------ Media Queries ----------- */
 
 @media (min-width: 768px) {
-	
+
 	.image {
 		width: 100%;
 		height: 22rem;
 			background: linear-gradient(to right, #968362, transparent 150%),
-            #968362 url('../websites/images/bioimage.jpg') no-repeat center; 
+            #968362 url('images/bioimage.jpg') no-repeat center;
 		background-size: cover;
 		background-position: 10% 15%;
 	}
-	
+
 	p,
 	.main-footer,
 	h3 {
-		margin: 0.1rem;	
-	}	
+		margin: 0.1rem;
+	}
 
 	.primary-content {
 		font-size: 1.1rem;
 		padding: .1rem;
 		display: inline-block;
 	}
-	
+
 	h2 {
 		margin: .4rem .4rem 1rem .4rem;
 	}
-	
+
 	.primary-content {
 		width: 32%;
 		float: left;
 		margin: .5rem 10rem .5rem .5rem;
 	}
-	
+
 	.main-footer {
 		float: left;
 		margin-left: 11rem;
 	}
-	
+
 	.clearfix::after {
 	  content: "";
 	  display: table;
