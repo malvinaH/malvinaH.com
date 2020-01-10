@@ -95,6 +95,7 @@ li a:hover {
 /*----- Main Styles------------*/
 
 body {
+    font-family: "Satirfy", satisfy;
 	padding: auto;
 	margin: auto;
     height: 50.7rem;
@@ -162,14 +163,15 @@ span {
 	}
 
 li a:hover {
-	color: #0f3133; ; /*#DAA520*/
+	color: #d4af37 ; /*#DAA520*/
 }
+
 	.social-media {
-		margin: 7.5rem 2.5rem .05rem 0;
+		margin: 4rem 2.5rem .05rem 0;
 	}
 
 	.wrap {
-		margin: 25rem 7rem 1rem auto;
+		margin: 45rem 7rem 1rem auto;
 	}
 
 	.main-footer {
