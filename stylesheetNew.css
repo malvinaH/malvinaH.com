@@ -81,7 +81,7 @@ li a:hover {
 
 .social-media {
 	text-align: right;
-	margin: 31rem 0.1rem 0 auto;
+	margin: 10rem 0.1rem 0 auto;
 }
 
 .social-icons li{
@@ -98,11 +98,11 @@ body {
     font-family: "Satirfy", satisfy;
 	padding: auto;
 	margin: auto;
-    height: 50.7rem;
+    height: 61rem;
 	background: linear-gradient(#968362/*#caf6fc*/, transparent 90%),
             #968362 url('images/resumeimage4.jpg') no-repeat center;
 	background-size: cover;
-	background-position: 100% 10%;
+	background-position: 87% 10%;
 }
 
 h1,
@@ -121,7 +121,7 @@ span {
 .main-footer {
 	text-align: right;
 	color: #d4cec5;
-	margin: 5.5rem 0.1rem 0 auto;
+	margin: 3rem 0.1rem 0 auto;
 	font-size: 0.6rem;
 }
 
