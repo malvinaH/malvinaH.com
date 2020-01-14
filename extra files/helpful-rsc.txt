@@ -1,0 +1,9 @@
+http://placeimg.com/ (images)
+https://dev.w3.org/html5/html-author/charref (css symbols)
+https://css-tricks.com/  (css)
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference (css and more)
+https://webplatform.github.io/docs/ (css and more)
+https://caniuse.com/
+https://www.w3.org/ 
+colorf picker (google)
+https://fonts.google.com/
