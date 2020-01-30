@@ -10,42 +10,53 @@ html {
 	box-sizing: border-box;
 }
 
-
-
-h1 {
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: 1.3;
-  text-shadow: 0 1px 1px rgba(0,0,0,.8);
-  margin: 1rem 7rem 0.4rem 1rem;
+html {
+    height: 100%;
 }
 
+body {
+    font-family: "Satirfy", satisfy;
+	background: linear-gradient(#968362/*#caf6fc*/, transparent 90%),
+            #968362 url('images/resumeimage4.jpg') no-repeat center;
+	background-size: cover;
+	background-position: 98% 10%;
 }
 
-.main-nav {
-	margin: .05rem 0.5rem 0.5rem 0.5rem;
-	padding: 0 0.1rem;
-	float: left;
-}
-.main nav li {
-    display: inline-block;
+.main-header__nav a
+.main-header__name a {
+    display: block;
+    text-align: center;
+    margin: .1em;
+	padding: 0 .1em;
 }
 
 ul {
-	margin: 0.2rem auto;
+    display: flex;
 }
 
-li {
-	overflow: hidden;
-	margin: 0.5rem;
-	font-size: 1.2rem;
+.main-header__name a {
+    color: black;
 }
+
+.main-header__name {
+    font-size: 2.3em;
+    font-weight: normal;
+    line-height: 1.3;
+    text-shadow: 0 1px 1px rgba(0,0,0,.8);
+    margin: .3em 2em;
+}
+
+.main-header__nav li {
+	overflow: hidden;
+	margin: 0.4em;
+	font-size: 1.15em;
+}
+
+
 
 li a {
-	width: 1rem;
 	color: #0f3133;
-	margin: 0 auto;
-	padding: 0 .4rem .4rem .4rem;
+	padding: 0 .4em .4em .4em;
 }
 
 a:link {
@@ -57,7 +68,7 @@ li a:hover {
 	color: #d4af37 ; /*#DAA520*/
 }
 
-.bar1, .bar2, .bar3 {
+/*.bar1, .bar2, .bar3 {
   width: 1.56rem;
   height: 0.125rem;
   background-color: #0f3133;
@@ -75,21 +86,24 @@ li a:hover {
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+}*/
+
+.social-media__container {
+    position: absolute;
+    right: 1.5em;
+    bottom: 7.2em;
 }
 
-.menu {
-	display: inline-block;
-	cursor: pointer;
-}
-
-.social-media {
+.social-media__icons {
+    display: flex;
+    display-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 	text-align: right;
-	margin: 37rem 0.1rem 0 auto;
 }
 
-.social-icons li{
-	margin: 1rem auto;
-	padding: .025rem;
+.social-media__icons li{
+    overflow: hidden;
 }
 
 
@@ -97,107 +111,70 @@ li a:hover {
 
 /*----- Main Styles------------*/
 
-body {
-    font-family: "Satirfy", satisfy;
-	padding: auto;
-	margin: auto;
-    height: 61rem;
-	background: linear-gradient(#968362/*#caf6fc*/, transparent 90%),
-            #968362 url('images/resumeimage4.jpg') no-repeat center;
-	background-size: cover;
-	background-position: 87% 10%;
-}
-
-h1,
-li {
-	list-style-type: none;
-	padding: 0;
-	display: inline-table;
-}
-
-span {
+.social-media__email {
 	text-align: right;
-	margin: 1rem 1.5rem 0 auto;
 }
 
 
 .main-footer {
+	font-size: 0.7em;
 	text-align: right;
 	color: #d4cec5;
-	margin: 3rem 0.1rem 0 auto;
-	font-size: 0.6rem;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 0
 }
 
+.email {
+    color: #968362;
+}
 
+.main-footer__copyright {
+    color: #d4af37;
+}
 
 /*Media Queries ----------- */
 
-@media all and (min-width: 50em),
-        (orientation: landscape) {
+@media (min-width: 768px) {
+    .social-media__container {
+        margin-bottom: 2.7em;
+    }
 
-	body {
-		height: 21.4rem;
-		text-align: right;
-		background-position: 30% 70%;
-		position: relative;
-		right: 0;
-		top: 0;
-		width: 100%;
-	}
+        .main-header__name,
+        .main-header__nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
 
-	.container {
-		margin: 10rem 1rem 0 auto;
-	}
-
-
-	h1 {
-		font-size: 2.5rem;
-		margin: 1rem 2rem 0 auto;
-		padding: 0.5rem;
-	}
-
-	.main-nav {
-		margin: .1rem;
-		padding: 0 0 0 1rem;
-	}
-
-	li {
-		margin: 0.3rem;
-		font-size: 1.2rem;
-	}
-
-li a:hover {
-	color: #d4af37 ; /*#DAA520*/
-}
-
-	.social-media {
-		margin: 4rem 2.5rem .05rem 0;
-	}
-
-	.wrap {
-		margin: 45rem 7rem 1rem auto;
-	}
-
-	.main-footer {
-		margin: .5rem 1.5rem 0 auto;
-		font-size: .8rem;
-	}
-}
-
-	.main-footer {
-		position: absolute;
-		right: 1.5rem;
-		bottom: 0;
-	}
-
-	.social-media {
-		position: absolute;
-		right: 0.2rem;
-		top: 7.5rem;
-	}
-
+    .main-header {
+        margin: 1.5em;
+    }
 }
 
 
+@media (min-width: 1024px) {
+
+    body{
+        width: 100%;
+        height: 47em;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+
+    .image {
+        background-position: 30% 70%;
+    }
+
+    .social-media__container {
+        height: 2.3em;
+    }
+
+    }
+}
 
 

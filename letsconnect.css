@@ -8,90 +8,107 @@ html {
 
 /*Base styles-------------*/
 
-body {
-  color: #fafafa;
-  font-size: 1rem;
-  text-transform: normal;
-  font-weight: normal;
-  line-height: 1.4;
-  text-shadow: 0 1px 1px rgba(0,0,0,.8);
-  margin: 0 auto;
-  text-align: left-side;
-}
-
 .image {
-	width: 90%;
-	padding: 0;
-	margin: 10px;
+    padding: 0 10px;
+	margin: 0;
 	border: 1px;
-    height: 22rem;
-			background: linear-gradient(to right, #968362, transparent 150%),
+	background: linear-gradient(to right, #968362, transparent 150%),
             #968362 url('images/bioimage.jpg') no-repeat center;
-		background-size: cover;
-		background-position: 10% 15%;
+	background-size: cover;
+	background-position: 20% 10%;
+    color: #fafafa;
+    font-size: 1.06em;
+    text-transform: normal;
+    font-weight: normal;
+    line-height: 1.7;
+    text-shadow: 0 1px 1px rgba(0,0,0,.8);
+    text-align: left-side;
 	}
 
-
-.secondary-content {
+.main-header__content {
+	font-size: 1em;
 	width: 100%;
-	overflow: auto;
 	float: left;
-	font-size: 16px;
 }
 
+.my-system__heading {
+    font-size: 1.4em;
+    margin-bottom: 0;
+}
 
-footer {
+.my-system__content {
+    margin-top: 5px;
+}
+
+.content__development {
+    margin: 0;
+}
+
+.main-footer {
 	width: 70%;
-	float: right;
-	margin-top: 1.8rem;
-	margin-right: 3.6rem;
+    fot-size: .7em;
+	float: left;
+	margin-top: 1em;
+	margin-left: 2.5em;
+    font-weight: bold;
 	}
 
+.main-footer__content {
+    margin-top: 0;
+}
+
+.main-footer__email {
+    color: #caf6fc;
+}
 
 /*Media Queries ----------- */
 
-@media (min-width: 768px) {
+@media (min-width: 50em) {
 
-body {
-	font-size: 15px;
-}
+    body {
+        font-size: 18px;
+    }
 
-.image {
-	float: right;
-	width: 50%;
-	padding: 1rem;
-	margin: 0;
-    height: 22rem;
-			background: linear-gradient(to left, #968362, transparent 150%),
-            #968362 url('images/bioimage.jpg') no-repeat center;
-		background-size: cover;
-		background-position: 10% 15%;
-	}
+    .image {
+        line-height: 2em;
+        float: right;
+        width: 50%;
+        padding: 1em;
+        margin: 0;
+        background: linear-gradient(to left, #968362, transparent 150%),
+                #968362 url('images/bioimage.jpg') no-repeat center;
+        background-size: cover;
+        background-position: 10% 15%;
+        font-weight: bold;
+        }
 
 
-.secondary-content {
-	margin-left: 10px;
-	width: 100%;
-	overflow: auto;
-	float: left;
-	font-size: 16px;
-}
+    .main_header__content {
+        margin-left: 10px;
+        width: 100%;
+        overflow: auto;
+        float: left;
+        font-size: 16px;
+    }
 
-.development {
-	margin-top : 2rem;
-	margin-left: 8rem;
-}
+    .content__development {
+        margin-top : 2em;
+        margin-left: 8em;
+    }
 
-footer {
-	width: 70%;
-	float: right;
-	margin-top: 2.5rem;
-	margin-right: 1.4rem;
-	}
+    .main-footer {
+        width: 70%;
+        float: right;
+        margin-top: 2.5em;
+        margin-right: 1.4em;
+        }
 
-a:link{
-	text-decoration: underline;
-}
-}
-	text-decoration: underline;
+    a:link{
+        text-decoration: underline;
+    }
+
+    .footer__whats-more {
+        display: flex;
+        justify-content: center;
+    }
 }
