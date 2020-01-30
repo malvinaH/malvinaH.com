@@ -164,12 +164,12 @@ li a:hover {
         flex-direction: row;
         flex-wrap: wrap;
         align-content: flex-end;
+        background: linear-gradient(#968362/*#caf6fc*/, transparent 90%),
+            #968362 url('images/resumeimage4.jpg') no-repeat center;
+        background-size: cover;
         background-position: 40% 60%;
     }
 
-/*    .image {
-        background-position: 30% 70%;
-    }*/
 
     .social-media__container {
         height: 2.5em;
