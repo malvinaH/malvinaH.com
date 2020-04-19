@@ -49,8 +49,8 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
     }
+
 .main-header__nav li {
 	overflow: hidden;
 	margin: 0.4em;
@@ -151,6 +151,21 @@ a:link {
         margin-bottom: 2.7em;
     }
 
+    .main-header__nav,
+    .main-header__name {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-header__container {
+        margin: 35em 10em;
+    }
+
+    .main-header__nav a{
+        font-size: 1.2em;
+        margin-right: 0.5em;
+    }
 
 /*        .main-header__name,
         .item {
