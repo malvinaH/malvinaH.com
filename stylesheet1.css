@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
 
+/* --- Malvina make more comment --- */
 
 /*---- Base styles-------------*/
 body {
@@ -32,5 +33,5 @@ a {
 /* ---- Media Queries ----*/
 
 @media (min-width: 769px) {
-	  
+
 }
